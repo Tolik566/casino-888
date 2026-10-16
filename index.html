@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090807">
+<title>Casino 777 — Мир азарта и эмоций</title>
+
+<style>
+*{box-sizing:border-box}
+:root{--gold:#f4cb68;--red:#a20d1d;--bg:#090807}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:#fff;
+  font-family:Arial,Helvetica,sans-serif;line-height:1.65
+}
+a{color:inherit}
+header{
+  position:sticky;top:0;z-index:5;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:13px 6%;background:#090807ed;
+  border-bottom:1px solid #6e5128
+}
+.logo{font-weight:1000;color:var(--gold);font-size:24px;letter-spacing:2px}
+nav{display:flex;gap:22px;font-size:14px}
+nav a{text-decoration:none;color:#e7dcc6}
+nav a:hover{color:var(--gold)}
+.hero{
+  padding:80px 20px 75px;text-align:center;
+  background:
+  radial-gradient(ellipse at 50% 0%,#5b171b 0%,transparent 60%),
+  linear-gradient(180deg,#170d0b,#090807)
+}
+.kicker{color:var(--gold);letter-spacing:4px;font-size:12px;font-weight:bold}
+h1{
+  font-size:clamp(48px,9vw,94px);line-height:1.04;
+  margin:12px 0;color:var(--gold);font-weight:1000;
+  text-shadow:0 0 28px #e2a52b50
+}
+.hero p{max-width:720px;margin:18px auto;color:#e0d7ca;font-size:18px}
+.gold-line{height:2px;width:130px;margin:22px auto;background:var(--gold)}
+.actions{display:flex;justify-content:center;gap:13px;flex-wrap:wrap;margin-top:28px}
+.btn{
+  display:inline-block;padding:14px 25px;border-radius:6px;
+  text-decoration:none;font-weight:900;letter-spacing:.5px;
+  background:linear-gradient(135deg,#ffebad,#d99e32);
+  color:#1a1004;box-shadow:0 5px 22px #d99e3230
+}
+.btn.alt{background:transparent;border:1px solid var(--gold);color:var(--gold)}
+.btn:hover{transform:translateY(-2px)}
+section.content{max-width:1120px;margin:auto;padding:65px 22px}
+.section-title{text-align:center;color:var(--gold);font-size:clamp(28px,5vw,42px);margin:0 0 10px}
+.section-lead{text-align:center;color:#c7bdaf;max-width:760px;margin:0 auto 32px}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.feature{
+  padding:25px 21px;background:linear-gradient(145deg,#1b1510,#100e0c);
+  border:1px solid #49371c;border-radius:9px
+}
+.feature .symbol{font-size:28px}
+.feature h3{color:var(--gold);margin:8px 0}
+.feature p{color:#c9c0b5;font-size:14px;margin-bottom:0}
+.promo{
+  text-align:center;padding:42px 22px;
+  background:linear-gradient(110deg,#3a0b10,#170b0b 60%,#3a2510);
+  border-top:1px solid #6e5128;border-bottom:1px solid #6e5128
+}
+.promo h2{color:var(--gold);font-size:clamp(25px,4vw,38px);margin:0 0 12px}
+.promo p{max-width:720px;margin:0 auto;color:#e5d9ca}
+.video-section{max-width:1000px!important}
+.videos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.video-card{
+  min-width:0;background:#14110d;border:1px solid #705328;
+  border-radius:9px;overflow:hidden
+}
+.video-card video{
+  display:block;width:100%;height:190px;object-fit:cover;background:#000
+}
+.video-caption{padding:12px;text-align:center;color:var(--gold);font-weight:bold}
+.video-note{text-align:center;color:#aaa;font-size:12px;margin-top:18px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;counter-reset:step}
+.step{padding:20px;border-left:2px solid var(--gold);background:#12100d}
+.step h3{margin:0 0 8px;color:var(--gold)}
+.step p{margin:0;color:#c9c0b5;font-size:14px}
+.faq{max-width:800px;margin:auto}
+details{padding:17px 0;border-bottom:1px solid #3c3020}
+summary{cursor:pointer;font-weight:bold;color:var(--gold)}
+details p{color:#c9c0b5;margin-bottom:0}
+.final-cta{text-align:center;padding:60px 20px;background:#120c09}
+.final-cta h2{color:var(--gold);font-size:clamp(28px,5vw,42px);margin:0 0 10px}
+.final-cta p{max-width:680px;margin:0 auto;color:#d1c5b6}
+footer{
+  padding:28px 20px;text-align:center;color:#999;
+  background:#070606;border-top:1px solid #302316;font-size:12px
+}
+footer p{max-width:900px;margin:8px auto}
+@media(max-width:700px){
+  header{padding:12px 16px}
+  .logo{font-size:20px}
+  nav{gap:10px;font-size:12px}
+  .hero{padding:65px 18px}
+  .hero p{font-size:16px}
+  section.content{padding:48px 17px}
+  .features,.steps{grid-template-columns:1fr}
+  .videos{gap:8px}
+  .video-card video{height:120px}
+  .video-caption{padding:9px 4px;font-size:12px}
+  .video-note{font-size:11px}
+}
+@media(max-width:380px){
+  nav{gap:7px;font-size:11px}
+  .video-card video{height:95px}
+}
+</style>
+</head>
+
+<body>
+<header>
+  <div class="logo">♛ CASINO 777</div>
+  <nav>
+    <a href="#about">О проекте</a>
+    <a href="#videos">Видео</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="kicker">МИР АЗАРТА • ЭМОЦИЙ • РАЗВЛЕЧЕНИЙ</div>
+    <h1>CASINO 777</h1>
+    <div class="gold-line"></div>
+    <p><strong>Почувствуй атмосферу игры!</strong> Открой для себя яркий мир игровых развлечений, знакомься с контентом и выбирай то, что подходит именно тебе.</p>
+    <p>Тебя ждут стильная подача, динамичные видео и знакомство с игровым миром в одном месте.</p>
+    <div class="actions">
+      <a class="btn" href="https://example.com" target="_blank" rel="noopener noreferrer">ПЕРЕЙТИ НА САЙТ ↗</a>
+      <a class="btn alt" href="#videos">СМОТРЕТЬ ВИДЕО ↓</a>
+    </div>
+  </section>
+
+  <section class="content" id="about">
+    <h2 class="section-title">БОЛЬШЕ ЭМОЦИЙ. БОЛЬШЕ АТМОСФЕРЫ.</h2>
+    <p class="section-lead">Casino 777 — страница для тех, кому нравится эффектный дизайн, игровой контент и насыщенная атмосфера. Изучай материалы и принимай решения осознанно.</p>
+    <div class="features">
+      <article class="feature">
+        <div class="symbol">♛</div>
+        <h3>Яркий стиль</h3>
+        <p>Золото, тёмный фон и выразительные детали создают узнаваемую атмосферу казино.</p>
+      </article>
+      <article class="feature">
+        <div class="symbol">▶</div>
+        <h3>Видео в одном месте</h3>
+        <p>Посмотри ролики прямо на странице — без необходимости искать каждый отдельно.</p>
+      </article>
+      <article class="feature">
+        <div class="symbol">✦</div>
+        <h3>Выбор за тобой</h3>
+        <p>Ознакомься с информацией, изучи условия и решай сам, подходит ли тебе этот формат развлечений.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="promo">
+    <h2>ТВОЁ ВПЕЧАТЛЕНИЕ — ТВОЙ ВЫБОР</h2>
+    <p>Не торопись: сначала изучи информацию, правила и условия. Игра должна оставаться развлечением, а не способом заработка.</p>
+  </section>
+
+  <section class="content video-section" id="videos">
+    <h2 class="section-title">ВИДЕО CASINO 777</h2>
+    <p class="section-lead">Три ролика, одна страница. Нажми на видео, если браузер не запустит его автоматически.</p>
+
+    <div class="videos">
+      <article class="video-card">
+        <video autoplay muted loop playsinline webkit-playsinline preload="metadata">
+          <source src="media/video-1.mp4" type="video/mp4">
+        </video>
+        <div class="video-caption">РОЛИК №1</div>
+      </article>
+      <article class="video-card">
+        <video autoplay muted loop playsinline webkit-playsinline preload="metadata">
+          <source src="media/video-2.mp4" type="video/mp4">
+        </video>
+        <div class="video-caption">РОЛИК №2</div>
+      </article>
+      <article class="video-card">
+        <video autoplay muted loop playsinline webkit-playsinline preload="metadata">
+          <source src="media/video-3.mp4" type="video/mp4">
+        </video>
+        <div class="video-caption">РОЛИК №3</div>
+      </article>
+    </div>
+    <p class="video-note">Для автоматического воспроизведения звук отключён. Автозапуск зависит от настроек браузера.</p>
+  </section>
+
+  <section class="content">
+    <h2 class="section-title">КАК НАЧАТЬ ЗНАКОМСТВО</h2>
+    <p class="section-lead">Несколько простых шагов, чтобы разобраться в информации и сделать осознанный выбор.</p>
+    <div class="steps">
+      <article class="step">
+        <h3>01. Изучи</h3>
+        <p>Посмотри видео и прочитай доступную информацию о платформе.</p>
+      </article>
+      <article class="step">
+        <h3>02. Проверь</h3>
+        <p>Изучи правила, ограничения, условия вывода средств и требования к возрасту.</p>
+      </article>
+      <article class="step">
+        <h3>03. Решай сам</h3>
+        <p>Не рискуй деньгами, которые нужны для повседневной жизни. Можно просто посмотреть контент.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="content" id="faq">
+    <h2 class="section-title">ЧАСТЫЕ ВОПРОСЫ</h2>
+    <p class="section-lead">Коротко о самом важном.</p>
+    <div class="faq">
+      <details>
+        <summary>Можно ли гарантированно выиграть?</summary>
+        <p>Нет. Азартные игры связаны с риском потери денег, а результат нельзя гарантировать.</p>
+      </details>
+      <details>
+        <summary>Почему видео иногда не запускается?</summary>
+        <p>Некоторые браузеры блокируют автоматическое воспроизведение. Проверь настройки Safari и используй совместимые видео MP4/H.264.</p>
+      </details>
+      <details>
+        <summary>Что нужно проверить перед регистрацией?</summary>
+        <p>Возрастные требования, доступность сервиса в твоём регионе, правила игры, условия платежей и вывода средств.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <h2>ГОТОВ ОТКРЫТЬ ДЛЯ СЕБЯ CASINO 777?</h2>
+    <p>Ознакомься с материалами, изучи условия и выбирай развлечения ответственно. Не воспринимай игру как источник дохода.</p>
+    <div class="actions">
+      <a class="btn" href="https://example.com" target="_blank" rel="noopener noreferrer">ПЕРЕЙТИ НА САЙТ ↗</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p><strong>CASINO 777 • 18+</strong></p>
+  <p>Информационная страница. Не является официальным сайтом игровой платформы, если это отдельно не подтверждено.</p>
+  <p>Азартные игры сопряжены с финансовыми рисками. Играйте ответственно, соблюдайте местное законодательство и возрастные ограничения.</p>
+</footer>
+
+<script>
+document.querySelectorAll(".video-card video").forEach(video => {
+  video.muted = true;
+  video.defaultMuted = true;
+
+  const attemptPlay = () => {
+    const result = video.play();
+    if (result && typeof result.catch === "function") {
+      result.catch(() => {
+        // Если Safari блокирует автозапуск, пользователь может запустить видео вручную.
+      });
+    }
+  };
+
+  video.addEventListener("canplay", attemptPlay);
+  window.addEventListener("pageshow", attemptPlay);
+  attemptPlay();
+});
+</script>
+</body>
+</html>
